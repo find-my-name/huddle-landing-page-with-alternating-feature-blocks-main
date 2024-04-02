@@ -1,0 +1,416 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+:root {
+  --bg-pale-cyan: hsl(193, 100%, 96%);
+  --bg-dark-cyan: hsl(192, 100%, 9%);
+  --bg-grey: hsl(208, 11%, 55%);
+  --bg-pink: hsl(322, 100%, 66%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  color: var(--bg-dark-cyan);
+}
+
+header {
+  padding: 2.5em 4em;
+  background: var(--bg-pale-cyan) url("/images/bg-hero-desktop.svg") center /
+    cover no-repeat;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .logo {
+  width: 150px;
+}
+
+.hero-wrapper {
+  margin-top: 3.5em;
+  display: flex;
+  align-items: center;
+  gap: 3em;
+  margin-bottom: 1em;
+}
+
+.hero-wrapper .hero-image {
+  width: 55%;
+}
+
+.hero-wrapper p {
+  font-size: 15px;
+  color: var(--bg-dark-cyan);
+  line-height: 1.5;
+  margin-bottom: 2.5em;
+}
+
+.cards {
+  position: relative;
+  padding: 7em 4em;
+}
+
+.cards .card {
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-bottom: 1.5em;
+  padding: 3em 2em 3em 6em;
+}
+
+.cards .card-2 {
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.cards .card-2 p {
+  max-width: 100% !important;
+}
+
+.cards .card-2 .content {
+  width: 46%;
+}
+
+.cards .card-3 {
+  margin-bottom: 8em;
+}
+
+.cards .card img {
+  width: 40%;
+}
+
+.cards .card p {
+  margin-top: 0.5em;
+  font-size: 15px;
+  color: var(--bg-grey);
+  max-width: 69%;
+  line-height: 1.5;
+}
+
+.cards .card-cta {
+  position: absolute;
+  left: 25%;
+  top: 90%;
+  width: 100%;
+  max-width: 50%;
+  padding: 3.5em 2.5em;
+  flex-direction: column;
+  gap: 1.5em;
+  background-color: #fff !important;
+}
+
+.cards .card-cta .btn {
+  font-size: 14px;
+}
+
+.main-footer {
+  background-color: var(--bg-dark-cyan);
+  padding: 8em 4em 3em 6em;
+  user-select: none;
+}
+
+.main-footer .container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+}
+
+.contact-hero {
+  max-width: 300px;
+}
+
+.contact-hero .contact {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin-top: 1em;
+}
+
+.contact-hero .contact:first-of-type {
+  align-items: start;
+  margin: 0;
+}
+
+.contact-hero .contact p {
+  font-size: 12px;
+  color: var(--bg-pale-cyan);
+}
+
+.contact-hero .contact img {
+  width: 12px;
+}
+
+.social .social-links {
+  list-style: none;
+}
+
+.social .social-links li {
+  margin-bottom: 0.5em;
+}
+
+.social .social-links li a {
+  text-decoration: none;
+  font-size: 14px;
+  color: var(--bg-pale-cyan);
+}
+
+.social .social-links li a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  margin-right: 7em;
+}
+
+.social-icons i {
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 6px;
+}
+
+.social-icons i:last-of-type {
+  margin: 0;
+}
+
+.social-icons i:hover {
+  border: 1px solid var(--bg-pink);
+  color: var(--bg-pink);
+}
+
+.fa-facebook-f {
+  padding: 12px 8px;
+}
+
+.fa-twitter {
+  padding: 12px 6px;
+}
+
+.fa-instagram {
+  padding: 12px 7px;
+}
+
+.main-footer .small {
+  margin-top: 2em;
+  text-align: right;
+  font-size: 10px;
+  color: var(--bg-pale-cyan);
+}
+
+/* Utility Classes */
+.btn {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.2px;
+  background: red;
+  padding: 1.2em 4.5em;
+  border-radius: 50px;
+}
+
+.btn.bg-white {
+  background-color: #fff;
+  color: var(--bg-dark-cyan);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn.bg-white:hover,
+.btn.bg-pink:hover {
+  opacity: 0.5;
+}
+
+.btn.bg-pink {
+  color: #fff;
+  background-color: var(--bg-pink);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1.head {
+  font-size: 2em;
+  max-width: 90%;
+  margin-bottom: 0.8em;
+}
+
+/* Media Queries */
+@media (min-width: 1440px) {
+  h1.head {
+    font-size: 2.2em;
+  }
+
+  .main-header p {
+    font-size: 1.2em !important;
+  }
+
+  .cards .card h2 {
+    font-size: 1.8em;
+  }
+
+  .cards .card p {
+    font-size: 1.2em !important;
+  }
+}
+@media (max-width: 992px) {
+  .hero-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-wrapper .hero-image {
+    width: 100%;
+    margin-top: 1.5em;
+  }
+
+  .cards .card-cta h2 {
+    font-size: 1.2em;
+  }
+
+  .cards .card-cta .btn {
+    font-size: 12px;
+  }
+
+  h1.head {
+    max-width: 100%;
+  }
+
+  .main-footer .container {
+    flex-direction: column;
+  }
+
+  .cards .card-cta {
+    padding: 3em 0;
+    left: 15%;
+    top: 90%;
+    max-width: 70%;
+  }
+
+  .contact-hero {
+    margin-bottom: 2em;
+  }
+
+  .contact-hero .contact p {
+    font-size: 15px;
+  }
+
+  .social .social-links li a {
+    font-size: 16px;
+  }
+
+  .social-icons {
+    margin-right: 0;
+    margin-top: 2em;
+    align-self: center;
+  }
+
+  .main-footer .small {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards .card {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 2em;
+    padding: 3em;
+  }
+
+  .cards .card-2 p {
+    max-width: 100% !important;
+  }
+
+  .cards .card-2 .content {
+    width: 100%;
+  }
+
+  .cards .card-3 {
+    margin-bottom: 8em;
+  }
+
+  .cards .card img {
+    width: 100%;
+  }
+
+  .cards .card p {
+    margin-top: 1em;
+    max-width: 100%;
+  }
+
+  .cards .card-cta {
+    top: 95%;
+    flex-direction: column;
+    gap: 1.5em;
+    background-color: #fff !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar .logo {
+    width: 100px;
+  }
+  header {
+    padding: 2.5em 2em;
+  }
+
+  .cards {
+    padding: 4em 2em;
+  }
+
+  .cards .card h2 {
+    font-size: 1.2em;
+  }
+
+  .cards .card p {
+    font-size: 12px;
+  }
+
+  .cards .card-cta {
+    max-width: 90%;
+    left: 5%;
+    top: 95%;
+    padding: 3em 0.5em;
+  }
+
+  .cards .card-cta h2 {
+    font-size: 1em;
+  }
+
+  .main-footer {
+    padding: 10em 2em 2em;
+  }
+
+  h1.head {
+    font-size: 1.5em;
+  }
+
+  .btn {
+    font-size: 10px !important;
+  }
+
+  .btn.bg-white {
+    padding: 0.5em 2em;
+  }
+
+  .btn.bg-pink {
+    padding: 1.2em 6em;
+  }
+}
